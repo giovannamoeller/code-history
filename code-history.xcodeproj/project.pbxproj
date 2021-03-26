@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		48FEAA36260D78CE002B1211 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 48FEAA35260D78CE002B1211 /* .gitignore */; };
+		48FEAA3A260D7EF1002B1211 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEAA39260D7EF1002B1211 /* WelcomeView.swift */; };
+		48FEAA3F260D83EC002B1211 /* GameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEAA3E260D83EC002B1211 /* GameColor.swift */; };
+		48FEAA43260D878A002B1211 /* BottomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEAA42260D878A002B1211 /* BottomTextView.swift */; };
 		48FF913325F944E8002A7D6B /* code_historyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF913225F944E8002A7D6B /* code_historyApp.swift */; };
-		48FF913525F944E8002A7D6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF913425F944E8002A7D6B /* ContentView.swift */; };
+		48FF913525F944E8002A7D6B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF913425F944E8002A7D6B /* GameView.swift */; };
 		48FF913725F944EC002A7D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FF913625F944EC002A7D6B /* Assets.xcassets */; };
 		48FF913A25F944EC002A7D6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FF913925F944EC002A7D6B /* Preview Assets.xcassets */; };
 		48FF915F25FACE7A002A7D6B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF915E25FACE7A002A7D6B /* Question.swift */; };
@@ -19,9 +22,12 @@
 
 /* Begin PBXFileReference section */
 		48FEAA35260D78CE002B1211 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		48FEAA39260D7EF1002B1211 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		48FEAA3E260D83EC002B1211 /* GameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameColor.swift; sourceTree = "<group>"; };
+		48FEAA42260D878A002B1211 /* BottomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTextView.swift; sourceTree = "<group>"; };
 		48FF912F25F944E8002A7D6B /* code-history.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code-history.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FF913225F944E8002A7D6B /* code_historyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code_historyApp.swift; sourceTree = "<group>"; };
-		48FF913425F944E8002A7D6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48FF913425F944E8002A7D6B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		48FF913625F944EC002A7D6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FF913925F944EC002A7D6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48FF913B25F944EC002A7D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +97,10 @@
 		48FF91692600454A002A7D6B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				48FF913425F944E8002A7D6B /* ContentView.swift */,
+				48FEAA3E260D83EC002B1211 /* GameColor.swift */,
+				48FF913425F944E8002A7D6B /* GameView.swift */,
+				48FEAA42260D878A002B1211 /* BottomTextView.swift */,
+				48FEAA39260D7EF1002B1211 /* WelcomeView.swift */,
 				48FF916225FC69E4002A7D6B /* ChoiceTextView.swift */,
 			);
 			path = Views;
@@ -168,8 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48FF915F25FACE7A002A7D6B /* Question.swift in Sources */,
+				48FEAA3A260D7EF1002B1211 /* WelcomeView.swift in Sources */,
 				48FF9166260044B4002A7D6B /* Game.swift in Sources */,
-				48FF913525F944E8002A7D6B /* ContentView.swift in Sources */,
+				48FF913525F944E8002A7D6B /* GameView.swift in Sources */,
+				48FEAA43260D878A002B1211 /* BottomTextView.swift in Sources */,
+				48FEAA3F260D83EC002B1211 /* GameColor.swift in Sources */,
 				48FF916325FC69E4002A7D6B /* ChoiceTextView.swift in Sources */,
 				48FF913325F944E8002A7D6B /* code_historyApp.swift in Sources */,
 			);

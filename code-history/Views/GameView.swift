@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GameView.swift
 //  code-history
 //
 //  Created by Giovanna Moeller on 10/03/21.
@@ -7,10 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
-    @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
-    let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
+struct GameView: View {
     
     let question = Question(
         questionText: "What was the first computer bug?",
@@ -20,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            mainColor.ignoresSafeArea()
+            (GameColor.main).ignoresSafeArea()
             VStack {
                 Spacer().frame(height: 50)
                 Text("1/10").font(.callout).multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/).padding()
@@ -31,9 +28,8 @@ struct ContentView: View {
                 VStack {
                     ForEach(0..<question.possibleAnswers.count) { answerIndex in
                         Button(action: {
-                            
                             print("Tapped on action \(answerIndex)")
-                            mainColor = answerIndex == question.correctAnswerIndex ? .green : .red
+                            /*GameColor.main = answerIndex == question.correctAnswerIndex ? .green : .red*/
                             }, label: {
                                 ChoiceTextView(choiceText: question.possibleAnswers[answerIndex])
                             })
@@ -46,8 +42,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GameView()
     }
 }
